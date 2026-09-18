@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thales Rodrigues — Página Pessoal</title>
+
+        <!-- Bootstrap 5 (CSS) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome (ícones) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body class="bg-body">
+        <main class="container py-5">
+            <p class="text-secondary mb-1">GAC116 — Programação Web · Atividade Prática 2</p>
+            <h1 class="display-6 fw-semibold mb-3">Página pessoal em duas versões</h1>
+            <p class="lead text-secondary mb-5">
+                Sou Thales Rodrigues, estudante de Ciência da Computação na UFLA. As duas versões abaixo
+                têm o mesmo conteúdo e o mesmo tema claro/escuro; muda apenas o framework CSS da interface.
+            </p>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <a class="card shadow-sm h-100 text-decoration-none text-body" href="bootstrap/index.html">
+                        <div class="card-body">
+                            <span class="badge text-bg-primary mb-3">Bootstrap 5.3</span>
+                            <h2 class="h5">Versão com Bootstrap</h2>
+                            <p class="text-secondary mb-0">
+                                Grid de 12 colunas, componentes prontos e JavaScript próprio para a navbar.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <a class="card shadow-sm h-100 text-decoration-none text-body" href="bulma/index.html">
+                        <div class="card-body">
+                            <span class="badge text-bg-success mb-3">Bulma 1.0</span>
+                            <h2 class="h5">Versão com Bulma</h2>
+                            <p class="text-secondary mb-0">
+                                Apenas CSS, baseado em Flexbox. O menu do celular foi escrito em JavaScript.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <h2 class="h5 mt-5 mb-3">Comparação entre os frameworks</h2>
+            <div class="table-responsive">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col">Critério</th>
+                            <th scope="col">Bootstrap 5.3</th>
+                            <th scope="col">Bulma 1.0</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Instalação</td>
+                            <td>um CSS e um JS pela CDN</td>
+                            <td>apenas um arquivo CSS</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript próprio</td>
+                            <td>sim (navbar, modais, abas)</td>
+                            <td>nenhum; o menu foi feito à mão</td>
+                        </tr>
+                        <tr>
+                            <td>Grid</td>
+                            <td><code>row</code> e <code>col-*</code></td>
+                            <td><code>columns</code> e <code>column is-*</code></td>
+                        </tr>
+                        <tr>
+                            <td>Tema escuro</td>
+                            <td><code>data-bs-theme</code></td>
+                            <td><code>data-theme</code></td>
+                        </tr>
+                        <tr>
+                            <td>Nomes das classes</td>
+                            <td>abreviados (<code>d-flex</code>, <code>mt-4</code>)</td>
+                            <td>descritivos (<code>is-vcentered</code>)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer class="border-top py-4">
+            <div class="container">
+                <small class="text-secondary">© 2026 Thales Rodrigues — UFLA</small>
+            </div>
+        </footer>
+    </body>
+</html>
